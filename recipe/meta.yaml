@@ -1,6 +1,6 @@
 package:
   name: m2-conda-epoch
-  version: '20230914'
+  version: '20240617'
 
 build:
   number: 0

@@ -71,14 +71,14 @@ Current release info
 Installing m2-conda-epoch
 =========================
 
-Installing `m2-conda-epoch` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `m2-conda-epoch` from the `conda-forge/label/msys2-experimental` channel can be achieved by adding `conda-forge/label/msys2-experimental` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/msys2-experimental
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `m2-conda-epoch` can be installed with `conda`:
+Once the `conda-forge/label/msys2-experimental` channel has been enabled, `m2-conda-epoch` can be installed with `conda`:
 
 ```
 conda install m2-conda-epoch
@@ -93,26 +93,26 @@ mamba install m2-conda-epoch
 It is possible to list all of the versions of `m2-conda-epoch` available on your platform with `conda`:
 
 ```
-conda search m2-conda-epoch --channel conda-forge
+conda search m2-conda-epoch --channel conda-forge/label/msys2-experimental
 ```
 
 or with `mamba`:
 
 ```
-mamba search m2-conda-epoch --channel conda-forge
+mamba search m2-conda-epoch --channel conda-forge/label/msys2-experimental
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search m2-conda-epoch --channel conda-forge
+mamba repoquery search m2-conda-epoch --channel conda-forge/label/msys2-experimental
 
 # List packages depending on `m2-conda-epoch`:
-mamba repoquery whoneeds m2-conda-epoch --channel conda-forge
+mamba repoquery whoneeds m2-conda-epoch --channel conda-forge/label/msys2-experimental
 
 # List dependencies of `m2-conda-epoch`:
-mamba repoquery depends m2-conda-epoch --channel conda-forge
+mamba repoquery depends m2-conda-epoch --channel conda-forge/label/msys2-experimental
 ```
 
 
@@ -134,7 +134,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
